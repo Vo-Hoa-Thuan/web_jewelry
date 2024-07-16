@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Tạo nội dung cho footer
     footer.innerHTML = `
-    <div class="footer-top section-padding">
+    <div class="footer-top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">

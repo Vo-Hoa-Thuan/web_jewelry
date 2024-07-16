@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    color: #767676;
+    line-height: 1.7;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Helvetica Neue, Roboto, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.section-padding {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.footer-top {
+    background-color: #f7f7f7;
+}
+
+.footer-top [class*="col-"]:last-child .widget-item {
+    margin-bottom: 0;
+}
+
+.widget-title {
+    margin-top: -6px;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+.contact-block li {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.contact-block li:last-child {
+    margin-bottom: 0;
+}
+
+.contact-block li i {
+    font-size: 18px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.contact-block li a {
+    color: #767676;
+}
+
+.contact-block li a:hover {
+    color: #363636;
+    letter-spacing: 1.1px;
+    text-decoration: none;
+}
+
+.info-list {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.info-list li {
+    margin-bottom: 8px;
+}
+
+.info-list li a {
+    font-size: 14px;
+    color: #767676;
+    text-transform: capitalize;
+    text-decoration: none;
+
+}
+
+.info-list li a:hover {
+    color: #363636;
+}
+
+.social-link {
+    margin-top: 30px;
+}
+
+.social-link a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    margin-right: 10px;
+    color: #777777;
+    display: inline-block;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #dedede;
+}
+
+.social-link a:last-child {
+    margin-right: 0;
+}
+
+.social-link a:hover {
+    color: #fff;
+    background-color: #363636;
+    border-color: #363636;
+}
+
+.news-field {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 10px 0;
+    color: #777777;
+    padding-right: 80px;
+    background-color: transparent;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.news-btn {
+    color: #363636;
+    margin-top: 26px;
+    line-height: 40px;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    right: 20px;
+    top: 0;
+}
+
+.news-btn:hover {
+    color: #767676;
+}
+
+.footer-payment {
+    text-align: right;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+}
+
+.copyright-text p a {
+    color: #363636;
+}
+
+.news-btn:hover {
+    color: #767676;
+}

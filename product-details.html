@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/productDetails.css">
+    <title>Product Details</title>
+    <style>
+        /* Bổ sung CSS tại đây nếu cần */
+    </style>
+</head>
+
+<body>
+    <div class="container-detail">
+        <div class="left-container">
+            <div class="img-center">
+                <img src="./images/Logo-loc-phuc-footer.png" alt="Logo">
+            </div>
+            <div class="img-support">
+                <ul class="list-img">
+                    <li><img src="./images/Logo-loc-phuc-footer.png" alt="Logo"></li>
+                    <li><img src="./images/Logo-loc-phuc-footer.png" alt="Logo"></li>
+                    <li><img src="./images/Logo-loc-phuc-footer.png" alt="Logo"></li>
+                    <li><img src="./images/Logo-loc-phuc-footer.png" alt="Logo"></li>
+                    <li><img src="./images/Logo-loc-phuc-footer.png" alt="Logo"></li>
+                </ul>
+            </div>
+        </div>
+    <div class="right-container">
+        <a href="#">ID product</a>
+        <h3>Name product</h3>
+        <div class="star-rating-container">
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star1">&#9733;</label>
+            </div>
+            <span>12 đánh giá</span>
+        </div>
+        <div>
+            <span class="price-detail">9.999.999 vnđ</span>
+            <p>Giá sản phẩm thay đổi tùy theo trọng lượng thực tế của sản phẩm. Vui lòng gọi
+                <strong>1900636526</strong> để được hỗ trợ
+            </p>
+        </div>
+        <div class="like-container">
+            <a href="#" title="Yêu thích">
+                <input type="radio" id="like" name="like" />
+                <label for="like"></label>
+                Yêu thích sản phẩm
+            </a>
+        </div>
+        <div class="pro-size">
+            <h6>Size: </h6>
+            <select name="size" id="size">
+                <option value="">Chọn kích cỡ</option>
+                <option value="0">Size 0</option>
+                <option value="1">Size 1</option>
+                <!-- Thêm các option khác tương ứng -->
+            </select>
+            <a href="#">Hướng dẫn đo size</a>
+        </div>
+        <div class="quantity-details">
+            <h6>Số lượng: </h6>
+            <div>
+                <span class="dec qtybtn">-</span>
+                <input id="count-quantity" type="text" value="1">
+                <span class="inc qtybtn">+</span>
+            </div>
+            <button onclick="addToCart()">Thêm vào giỏ hàng</button>
+        </div>
+        <div class="inforproduct">
+            <h6 class="inforproduct-control"><button onclick="toggleHiddenInf()"> THÔNG TIN THƯƠNG HIỆU VÀ SẢN PHẨM
+                </button>
+            </h6>
+            <div class="inforproduct-content">
+                <h5>LỘC PHÚC FINE JEWELRY - ĐIỂM ĐẾN TRANG SỨC CHẤT LƯỢNG TẠI VIỆT NAM</h5>
+                <p>Lộc Phúc Fine Jewelry là thương hiệu trang sức tại thị trường Việt Nam, với nền tảng 20 năm kinh
+                    nghiệm trong lĩnh vực sản xuất và phân phối trang sức cho các cửa hàng truyền thống trên khắp cả
+                    nước, và hợp tác cùng nhiều chuyên gia có bề dày kinh nghiệm trong lĩnh vực trang sức trong nước
+                    và thế giới. Mỗi thiết kế trang sức đều được Lộc Phúc trau chuốt từ khâu lên ý tưởng, thiết kế,
+                    chế tác cho đến khi hoàn thiện.</p>
+            </div>
+        </div>
+        <div class="infordetail">
+            <h6 class="infordetail-control"><button onclick="toggleHiddenDet()"> CHI TIẾT SẢN PHẨM</h6>
+            <table class="infordetail-content">
+                <tr>
+                    <th>Thương Hiệu</th>
+                    <td><a href="#">Lộc Phúc Fine Jewelry</a></td>
+                </tr>
+                <tr>
+                    <th>Loại sản phẩm</th>
+                    <td>Dây chuyền liền mặty</td>
+                </tr>
+                <tr>
+                    <th>Loại đá</th>
+                    <td> CZ</td>
+                </tr>
+                <tr>
+                    <th>Số lượng đá</th>
+                    <td>45 viên</td>
+                </tr>
+                <tr>
+                    <th>Trọng lượng đá</th>
+                    <td>0.2548 (grams)</td>
+                </tr>
+                <tr>
+                    <th>Loại vàng</th>
+                    <td>White</td>
+                </tr>
+                <tr>
+                    <th>Tuổi vàng</th>
+                    <td>10K</td>
+                </tr>
+                <tr>
+                    <th>Trọng lượng vàng</th>
+                    <td>2.2166 (grams)</td>
+                </tr>
+                <tr>
+                    <th>Chất thệu khác</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Màu chất thệu khác</th>
+                    <td>0.2548 (grams)</td>
+                </tr>
+                <tr>
+                    <th>Trọng lượng sản phẩm</th>
+                    <td>2.4714 (grams)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+    <div class="container-footer">
+        <div class="left-container-footer">
+            <div class="left-img">
+                <img src="./images/Logo-loc-phuc-footer.png" alt="">
+            </div>
+            <div class="left-inf">
+                <h5> CAM KẾT CHẤT LƯỢNG</h5>
+                <ul>
+                    <li>100% Chuẩn xác về hàm lượng vàng. Tất cả các thiết kế trang sức của Lộc Phúc Fine Jewelry được
+                        kiểm
+                        định chặt chẽ với máy quang phổ, cam kết chuẩn xác hàm lượng vàng.</li>
+                    <li>100% chuẩn xác về trọng lượng vàng</li>
+                    <li>100% trang sức được kiểm định chất lượng từ Lộc Phúc Fine Jewelry. Đối với kim cương rời từ 3.6
+                        ly
+                        trở lên Lộc Phúc Fine Jewelry sẽ cung cấp giấy kiểm định chất lượng do tổ chức quốc tế GIA cấp.
+                    </li>
+                    <li>Mọi món trang sức do Lộc Phúc Fine Jewelry bán ra đều có hóa đơn (đã bao gồm các loại thuế), ghi
+                        đầy
+                        đủ hàm lượng, trọng lượng vàng, carat kim cương cũng như và điều kiện bảo hành trang sức và
+                        chính
+                        sách thu đổi.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-container-footer">
+            <div class="right-img">
+                <img src="./images/Logo-loc-phuc-footer.png" alt="">
+            </div>
+            <div class="right-inf">
+                <h5>HƯỚNG DẪN MUA HÀNG ONLINE</h5>
+                <ul>
+                    <li>Truy cập website locphuc.com.vn</li>
+                    <li> Tìm sản phẩm cần mua.</li>
+                    <li> Chọn sản phẩm thêm vào giỏ hàng.</li>
+                    <li>Nhập thông tin mua hàng và nhận hàng.</li>
+                    <li>Chọn hình thức giao hàng và thanh toán.</li>
+                    <li>Nhận thông tin xác nhận đơn hàng thành công (SMS, Email).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="seen">
+        Sản phẩm đã xem
+    </div>
+    <script>
+        // Xử lý tăng/giảm số lượng sản phẩm
+        const max = 5;
+        const min = 1;
+        const incBtn = document.querySelector('.inc');
+        const decBtn = document.querySelector('.dec');
+        const countInput = document.getElementById('count-quantity');
+
+        incBtn.addEventListener('click', function () {
+            let currentValue = parseInt(countInput.value);
+            if (currentValue < max) {
+                countInput.value = currentValue + 1;
+            }
+        });
+
+        decBtn.addEventListener('click', function () {
+            let currentValue = parseInt(countInput.value);
+            if (currentValue > min) {
+                countInput.value = currentValue - 1;
+            }
+        });
+
+        // Xử lý hiển thị/ẩn thông tin chi tiết sản phẩm
+        function toggleHiddenInf() {
+            let elements = document.querySelectorAll('.inforproduct-content');
+            elements.forEach(function (element) {
+                if (element.style.display === 'none' || element.style.display === '') {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+        }
+
+        function toggleHiddenDet() {
+            let elements = document.querySelectorAll('.infordetail-content');
+            elements.forEach(function (element) {
+                if (element.style.display === 'none' || element.style.display === '') {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+        }
+
+        // Xử lý thêm vào giỏ hàng (ví dụ đơn giản)
+        function addToCart() {
+            let quantity = parseInt(countInput.value);
+            let selectedSize = document.getElementById('size').value;
+
+            // Thực hiện xử lý thêm sản phẩm vào giỏ hàng tại đây
+            // Ví dụ: hiển thị thông báo, gọi API, ...
+            console.log(`Thêm ${quantity} sản phẩm vào giỏ hàng, kích cỡ: ${selectedSize}`);
+        }
+    </script>
+</body>
+
+</html>

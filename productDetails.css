@@ -1,0 +1,229 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Center the main container content */
+.container-detail {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-container {
+    flex-direction: column;
+    flex: 4;
+    padding: 20px;
+    align-items: center;
+}
+
+/* Center the image within img-center */
+.img-center {
+    margin-bottom: 20px;
+}
+
+.img-center img {
+    display: block;
+    margin: 0 auto;
+}
+
+.img-support {
+    width: 100%;
+}
+
+/* Style the list of images in img-support */
+.list-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-img li {
+    margin: 5px;
+}
+
+.list-img img {
+    display: block;
+    max-width: 100px;
+    height: auto;
+}
+
+.right-container {
+    flex: 6;
+    padding: 20px 50px;
+}
+
+/* Styles for the star rating component */
+.star-rating-container {
+    display: flex;
+    align-items: center;
+}
+
+.star-rating {
+    display: flex;
+    direction: rtl;
+    margin-right: 10px;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    color: #ddd;
+    cursor: pointer;
+}
+
+.star-rating input[type="radio"]:checked~label {
+    color: gold;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label {
+    color: gold;
+}
+
+/* Styles for the like container */
+.like-container {
+    display: flex;
+    align-items: center;
+}
+
+.like-container input[type="radio"] {
+    display: none;
+}
+
+.like-container label {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>') no-repeat center / contain;
+    cursor: pointer;
+}
+
+.price-detail {
+    color: red;
+}
+
+/* Styles for the quantity details */
+.quantity-details {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-details h6 {
+    margin: 0;
+}
+
+.quantity-details div {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.qtybtn {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+#count-quantity {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+/* Styles for product information and details */
+.inforproduct,
+.infordetail {
+    margin-bottom: 20px;
+}
+
+.inforproduct .inforproduct-control,
+.infordetail .infordetail-control {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.inforproduct-content,
+.infordetail-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.infordetail-content {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.infordetail-content th,
+.infordetail-content td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.infordetail-content th {
+    font-weight: bold;
+    width: 30%;
+}
+
+.infordetail-content td {
+    width: 70%;
+}
+
+.infordetail-content a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.infordetail-content a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for the footer container */
+.container-footer {
+    display: flex;
+    width: 100%;
+}
+
+.left-container-footer {
+    flex: 5;
+    padding: 20px;
+}
+
+.right-container-footer {
+    flex: 5;
+    padding: 20px;
+}
+
+.right-container-footer,
+.left-container-footer {
+    display: flex;
+}
+
+/* Styles for the seen section */
+.seen {
+    text-align: center;
+}

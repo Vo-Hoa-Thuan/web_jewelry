@@ -13,7 +13,7 @@ a {
     display: flex;
     justify-content: center;
     width: 100%;
-    align-items: center;
+    /* align-items: center; */
     padding: 20px;
 }
 
@@ -22,6 +22,8 @@ a {
     flex: 4;
     padding: 20px;
     align-items: center;
+    justify-content: flex-start;
+    position: relative;
 }
 
 /* Center the image within img-center */

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập - Đăng Ký</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/header.css">
+</head>
+<body>
+    <header>
+        <script src="js/header.js"></script>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form-container login-container">
+                <form action="#">
+                    <h2>Đăng Nhập</h2>
+                    <input type="text" placeholder="Tên tài khoản hoặc Email" required />
+                    <input type="password" placeholder="Mật khẩu" required />
+                    <div class="form-options">
+                        <label>
+                            <input type="checkbox" />
+                            Nhớ Đăng Nhập
+                        </label>
+                        <a href="#">Quên mật khẩu?</a>
+                    </div>
+                    <button type="submit">Đăng nhập</button>
+                </form>
+            </div>
+            <div class="form-container register-container">
+                <form action="#">
+                    <h2>Đăng Ký</h2>
+                    <input type="text" placeholder="Họ và Tên" required />
+                    <input type="email" placeholder="Email" required />
+                    <input type="password" placeholder="Mật khẩu" required />
+                    <input type="password" placeholder="Xác nhận mật khẩu" required />
+                    <input type="text" placeholder="Số điện thoại" required />
+                    <label>
+                        <input type="checkbox" />
+                        Nhận Email Từ Lộc Phúc Fine Jewelry
+                    </label>
+                    <div class="recaptcha">
+                        <input type="checkbox" required />
+                        Tôi không phải là người máy
+                    </div>
+                    <button type="submit">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="header.js"></script>
+</body>
+</html>

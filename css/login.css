@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* Your existing header styles */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 1000px;
+}
+
+.login-container{
+    margin-bottom: 300px;
+}
+
+.register-container{
+    margin-bottom: 100px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    font-size: 14px;
+    color: #767676;
+    background-color: #f7f7f7;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.form-options a {
+    color: #333;
+    text-decoration: none;
+}
+
+.form-options a:hover {
+    text-decoration: underline;
+}
+
+.recaptcha {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.recaptcha input {
+    margin-right: 10px;
+}
